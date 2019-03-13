@@ -97,7 +97,6 @@ public class GameObject {
                 gameObject.setY(random.nextInt(World.HEIGHT) - margin);
                 break;
         }
-
         return gameObject;
     }
 

@@ -60,18 +60,17 @@ public class GameOverScreen extends VBox {
                 transition = new TranslateTransition(Duration.millis(500), GameOverScreen.this);
                 transition.setInterpolator(Interpolator.EASE_BOTH);
                 if (newValue.intValue() == 0) {
-//                    transition.setToY(0);
+                    transition.setToY(0); // this
                     GameOverScreen.this.setTranslateY(0);
                     gameOverLabel.setFont(new Font("Arial", 50));
                     gameOverLabel.setText("GAME OVER");
                     scoreLabel.setFont(new Font("Arial", 30));
                     scoreLabel.setText("Je score is: " + gameController.getGame().getPlayer().getScore());
                 } else {
-//                    transition.setToY(height);
+                    transition.setToY(height); // this
                 }
-                //transition.play();
+                transition.play(); // this
             }
-
         });
     }
 }

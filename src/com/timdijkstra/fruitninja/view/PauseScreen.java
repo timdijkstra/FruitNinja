@@ -46,17 +46,16 @@ public class PauseScreen extends VBox {
                 transition = new TranslateTransition(Duration.millis(500), PauseScreen.this);
                 transition.setInterpolator(Interpolator.EASE_BOTH);
                 if (newValue) {
-//                    transition.setToY(0);
+                    transition.setToY(0); // this
                     PauseScreen.this.setTranslateY(0);
                     pauseLabel.setFont(new Font("Arial", 30));
                     pauseLabel.setText("Pause");
                 } else {
-//                    transition.setToY(height);
+                    transition.setToY(height); // this
                     PauseScreen.this.setTranslateY(height);
                 }
-//                transition.play();
+                transition.play(); //this
             }
-
         });
     }
 }

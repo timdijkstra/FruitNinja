@@ -35,6 +35,4 @@ public class Fruit extends GameObject {
             return Type.values()[(random.nextInt(Type.values().length))];
         }
     }
-
-
 }

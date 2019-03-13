@@ -94,8 +94,6 @@ public class GameController {
             e.printStackTrace();
         }
         mediaPlayer.play();
-
-
     }
 
     public void replay(){

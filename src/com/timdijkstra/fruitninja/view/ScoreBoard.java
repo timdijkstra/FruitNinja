@@ -39,6 +39,4 @@ public class ScoreBoard extends HBox {
         getChildren().add(scoreLabel);
         getChildren().add(livesLabel);
     }
-
-
 }
